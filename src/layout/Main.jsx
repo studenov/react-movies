@@ -13,7 +13,7 @@ class Main extends Component {
     }
 
     componentDidMount() {
-        fetch(`http://www.omdbapi.com/?i=${ID_KEY}&apikey=${API_KEY}&s=speed`)
+        fetch(`https://www.omdbapi.com/?i=${ID_KEY}&apikey=${API_KEY}&s=speed`)
         .then(response => response.json())
         .then(data => this.setState({
             movies: data.Search,
